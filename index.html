@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="favicon.ico" rel="icon" />
+    <title>Math Quiz</title>
+  </head>
+  <body>
+    <main id="game-box">
+      <div id="instructions">
+        <h2 class="title">Math Quiz</h2>
+        <h3>How to Play?</h3>
+        <ul id="how-to">
+          <li>
+            There are 25 questions that you must answer. They contain
+            mathematical expressions of varying difficulty, starting from
+            addition and subtraction to multiplication and division.
+          </li>
+          <li>
+            You have 10 seconds to answer each question. When the time runs out,
+            the correct answer will be revealed without an addition to your
+            score. Think fast and act fast!
+          </li>
+          <li>
+            Correct answers are worth 4 points. Incorrect answers or blank
+            answers (due to running out of time) won't deduct score.
+          </li>
+          <li>
+            When you have answered all questions, you'll be graded based on the
+            amount of correct answers you got. There'll also be a timer that
+            tracks how much time you've spent overall and the average of your
+            time spent on each question.
+          </li>
+        </ul>
+        <p>When you've read all of the notes above, press the button below:</p>
+        <button id="play">Let's Go!</button>
+      </div>
+
+      <div id="questions">
+        <h2 class="title" id="question-number">Question 1/25</h2>
+        <span id="question"></span>
+        <span id="timer">
+          <i id="current-time"></i>
+        </span>
+        <ul id="answers"></ul>
+      </div>
+
+      <div id="results">
+        <h2 class="title">Results</h2>
+        <span id="score">
+          Your score is: <span id="score-number">0</span>
+          <span id="grade">(F)</span>
+          <span id="comment">
+            You should improve your math skills and try again. You can do it!
+          </span>
+        </span>
+        <ul id="question-results">
+          <li>Questions Answered <span class="number">0</span></li>
+          <li>Correct Answers <span class="number">0</span></li>
+          <li>Incorrect Answers <span class="number">0</span></li>
+        </ul>
+        <ul id="time-results">
+          <li>Overall Time Spent <span class="number">0s</span></li>
+          <li>Average Time Spent <span class="number">0s</span></li>
+          <li>
+            <button id="retry">Retry Quiz</button>
+            <button id="back">Go Back</button>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
