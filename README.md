@@ -1,0 +1,15 @@
+# Math Quiz
+#### Video Demo:  [https://www.youtube.com/watch?v=eedySDb0Org](https://www.youtube.com/watch?v=eedySDb0Org)
+#### Description:
+Hello all. This is the project that I submitted for the final assignment of CS50x: making a project of your own. In this case, I made a math quiz game simply named "Math Quiz" &ndash; just like how it was written in the title. The project itself is made with pure HTML, CSS and JavaScript. As such, no frameworks (for example React, Vue, etc.) were used in this project, as I deemed them not really necessary (for now). Inside this repository you will find a bunch of files, being:
+
+##### favicon.ico
+The icon of the project itself. It looks like a box separated into four smaller ones, being green, red, yellow and blue in a clockwise order and starting from top-left (making it look almost identical to the Windows icon with the colors red and green being swapped). There are also four symbols, one for each box: addition sign (+) in the green box, subtraction sign (-) in the red box, division sign (&div;) in the yellow box and multiplication sign (&times;) in the blue box, once again being in a clockwise order. This represents the mathematical operators present in the questions presented by Math Quiz, and as such there are no operations like exponentiation and others.
+
+##### index.html
+The HTML file containing the basic layout of the project. It uses styles.css for its formatting and script.js for it to actually work. It is made of three sections: the instructions, the questions and the results. The user can navigate them all in a way that it allows the user to go to each section effectively, and uses DOM manipulation done by script.js for this navigation to actually work.
+* The instructions section is relatively simple: it features a set of instructions that the user should read before attempting the quiz and the button to start the quiz.
+* The questions section is more complicated: it features the question the user is currently in, the expression for the question, a 10 seconds timer and four different answers (with only one being correct) for the expression itself. The mechanism behind this will be explained further in the script.js section. When the user clicks on the correct answer, it will give the user a hint that their answer is correct. Vice versa for the incorrect answer, and as an extra the user is shown the correct answer too. When the timer runs out, the correct answer is also shown.
+* The results section shows the user's score and grade, as well as the comment for the grade. Not only that, but the amount of questions answered and the amount of correct and incorrect answers are also shown. The time needed to answer all questions and the average time needed for each question is also shown here. The user can retry the quiz by clicking the "Retry Quiz" button or they can go back to the initial section (the instructions one) by clicking the "Go Back" button.
+
+**I will finish this later, as it's nearing 11 PM in my country. I'll get back to this soon, since I want to finish this project ASAP.**
